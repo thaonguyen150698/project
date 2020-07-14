@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<meta name="viewport" contenet="width=device-width,initial-scale=1.0">
+	<title>MIA's Closet</title>
+
+	<link rel="icon" type="image/gif/png" href="logo-title.png"/>
+	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+
+
+	<script src="./firebase.js"></script>
+	
+</head>
+<body>
+	<div class="nav1">
+		<label class="title1">MIA's Closet fastest online shopping destination</label>
+		<ul>
+			<li><a href="#">Track Order</a></li>
+			<li>|</li>
+			<li><a href="#">Contact us</a></li>
+			<li>|</li>
+			<li><a href="#">FAQ</a></li>
+		</ul>
+	</div>
+	<div class="nav2">
+		<a href="#" class="logo"><img src="logo.jfif" /></a>
+		<ul>
+			<li><div class="app"><img src="medal.png" />Get the free App !</div></li>
+			<li><div class="cart"><img src="shopping-bag.png" />Cart 0</div></li>
+			<li class="signed-out">
+				<a href="signUp.html">Sign up</a>
+			</li>
+			
+			<li class="signed-out">
+				<a href="#" id="logInButton">Log in</a>
+			</li>
+			<li><div class="signed-in">
+				<button onclick="myFunction()" class="dropbtn">My account<img src="menu.png" /></button>
+				<div id="myDropdown" class="account-content">				
+				<button>Profile</button>
+				<button>Orders</button>
+				<button>Returns</button>
+				<button>Wishlist</button>
+				<button>CluesBucks</button>
+				<button>Feedback</button>
+				<button>Payment</button>
+				<button onclick="signOutForm()" id="signOutForm()">Sign Out</button>
+				</div>
+			</div>
+			</li>
+		</ul>
+	</div>
+		
+	<div class="signIn">
+		<div class="signInForm">
+			<img src="logo-signup.jpg" />
+			<form action="">
+			<input type="email" placeholder="Enter your email address" id="email">
+			<input type="password" placeholder="Enter your password" id="password">
+			<button onclick="signInForm()" id="signInForm()">Log in</button>
+			</br>
+			</br>
+			<a href="signUp.html">New to MIA's CLOSET? Sign up</a>
+			<div class="closeSignIn">x</div>
+		</div>
+	</div>
+	<div class="nav3">
+		<div class="menuicon">
+			<img src="menuicon.png" />
+			<label class="title2">All Category</label>
+			<input type="text" id="searchIcon" placeholder="Search for Products, Brands"> 
+		</div>
+	</div>
+	<div class="nav4">
+	</div>
+	<div class="newArrivals">
+		<h3>New Arrivals</h3>
+	</div>
+	<div class="clothes">
+		<div class="menpic"><img src="men.jpg" /></div>
+		<div class="men">
+			<ul>
+			<li>Men's</li>
+			<li>T-Shirts</li>
+			<li>Casual Shirts</li>
+			<li>Jeans</li>										<li>Accessories</li>
+			<li>Casual Shoes</li>
+			<li>Sports Shoes</li>
+			<li>Innerwear</li>
+			</ul>	
+		</div>
+		<div class="womenpic"><img src="women.jpeg"/> </div>
+		<div class="women">
+			<ul>
+			<li>Women's</li>
+			<li>Kurtas & Suits</li>
+			<li>Tops & Tees</li>
+			<li>Dresses</li>									<li>Accessories</li>
+			<li>Flats & Casual Shoes</li>
+			<li>Handbags & Wallets</li>
+			<li>Jewellery</li>
+			</ul>
+		</div>
+	</div>
+	<div class="popular">
+		<h3>Popular Categories</h3>
+	</div>
+	<div class="famous">
+		<div class="item"><img src="lisa.jpg"/><p>Women</p></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>		
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
